@@ -1,9 +1,9 @@
-title: Week 1
+---
+title: "Week 1: Introduction to C Programming"
+layout: post
 date: 2025-03-13 12:00:00 +0000
-categories: [C Programming]
-tags: [C]     # TAG names should always be lowercase
-
-# Week 1: Introduction to C Programming
+categories: [C Programming, Beginner]
+---
 
 ## Overview
 Welcome to your first week of learning C programming! This week, we will cover the basics of writing and running a simple C program. By the end of this tutorial, you will:
@@ -33,6 +33,7 @@ int main() {
     return 0;
 }
 ```
+
 ### **Explanation:**
 - `#include <stdio.h>`: This is a preprocessor directive that includes the standard input-output library.
 - `int main()`: This is the main function where program execution starts.
@@ -48,6 +49,7 @@ Modify the above program to print your name instead of "Hello, World!".
 Variables are used to store data. In C, you must declare a variable before using it.
 
 ### **Common Data Types:**
+
 | Data Type | Description | Example |
 |-----------|-------------|---------|
 | `int` | Stores integers | `int age = 25;` |

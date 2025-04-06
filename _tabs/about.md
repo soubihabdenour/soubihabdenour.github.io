@@ -56,7 +56,7 @@ Master’s student specializing in **security in machine learning**, with a rese
 
 - **Arabic**: Native  
 - **French**: Fluent  
-- **English**: Full Professional Proficiency (C1 Certified)
+- **English**: Fluent
 
 ---
 

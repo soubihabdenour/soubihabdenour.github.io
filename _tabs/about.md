@@ -38,7 +38,6 @@ Beyond research, I have hands-on experience in **IoT systems**, **wireless netwo
 ## 💼 Experience Highlights
 
 - Conducting research on **robust federated learning** using the Flower framework  
-- Presented at **USENIX Security 2024**: *“BackdoorIndicator: Leveraging OOD Data for Proactive Backdoor Detection in Federated Learning”*  
 - Developed IoT and mobile applications for academic and industrial partners  
 - Contributed to **WaterMed 4.0**, a PRIMA-funded international project on smart irrigation  
 - Internship in **cellular network performance analysis** at Access Telecom, Algeria  

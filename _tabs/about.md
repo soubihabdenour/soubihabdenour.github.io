@@ -13,7 +13,8 @@ order: 4
 
 ## 🧠 About Me
 
-Master’s student specializing in **security in machine learning**, with a research focus on **federated learning** and privacy-preserving AI systems. Background includes academic degrees in computer science, hands-on experience with **IoT**, **wireless sensor networks**, and contributions to international research projects.
+I’m a master’s student at SKKU specializing in **security and robustness in federated learning**. My research explores **data poisoning, backdoor detection, and privacy-preserving mechanisms** in distributed and collaborative AI systems.  
+Beyond research, I have hands-on experience in **IoT systems**, **wireless networks**, and **AI-driven edge computing**, combining practical engineering with academic depth.
 
 ---
 
@@ -21,49 +22,52 @@ Master’s student specializing in **security in machine learning**, with a rese
 
 **Sungkyunkwan University (SKKU)** – Suwon, South Korea  
 *Master’s in Computer Science and Engineering* (2024 – Present)  
+- Focus: Federated Learning, Robustness, Privacy, Secure Aggregation  
 - STEM Scholarship Recipient  
-- Focus: Machine Learning Security, Federated Learning
 
-**University of Oran1 Ahmed Ben Bella** – Oran, Algeria  
+**University of Oran 1 Ahmed Ben Bella** – Oran, Algeria  
 *Master’s in Computer Science* (2018 – 2020)  
-- Final Project: Deployment of a FIWARE-IoT platform
+- Final Project: Deployment of a FIWARE-based IoT platform  
 
 **UHBC University** – Chlef, Algeria  
 *Bachelor’s in Computer Systems* (2015 – 2018)  
-- Final Project: E-commerce and online auction platform
+- Final Project: E-commerce and Online Auction Platform  
 
 ---
 
 ## 💼 Experience Highlights
 
-- Developed IoT systems and mobile/web applications in both academic and industry contexts  
-- Contributed to **WaterMed4.0**, a PRIMA-funded international project on smart irrigation  
-- Internship in **cellular network performance analysis** (Access Telecom, Algeria)  
-- Strong collaboration experience with research teams across Europe (Spain, Turkey)
+- Conducting research on **robust federated learning** using the Flower framework  
+- Presented at **USENIX Security 2024**: *“BackdoorIndicator: Leveraging OOD Data for Proactive Backdoor Detection in Federated Learning”*  
+- Developed IoT and mobile applications for academic and industrial partners  
+- Contributed to **WaterMed 4.0**, a PRIMA-funded international project on smart irrigation  
+- Internship in **cellular network performance analysis** at Access Telecom, Algeria  
+- Collaborated with research teams across Europe (Spain, Turkey)  
 
 ---
 
 ## 🛠️ Skills
 
-- **Programming**: Python, C, PHP, Flutter  
-- **Technologies**: IoT, NGSI-LD, JSON-LD, LoRaWAN, MQTT  
-- **Tools**: Linux, TEMS, AWS IoT, Fiware  
-- **Soft Skills**: Project management, teamwork, problem-solving
+- **Programming:** Python, C, PHP, Flutter  
+- **Frameworks:** PyTorch, Flower, TensorFlow  
+- **Technologies:** IoT, NGSI-LD, JSON-LD, LoRaWAN, MQTT  
+- **Tools:** Linux, TEMS, AWS IoT, FIWARE  
+- **Soft Skills:** Research communication, teamwork, project management  
 
 ---
 
 ## 🌍 Languages
 
-- **Arabic**: Native  
-- **French**: Fluent  
-- **English**: Fluent
+- **Arabic:** Native  
+- **French:** Fluent  
+- **English:** Fluent  
+
 ---
 
 ## 🔗 Links
- 
-- [WaterMed Project](https://www.watermed-project.eu)
+
+- [WaterMed 4.0 Project](https://www.watermed-project.eu)  
 
 ---
 
-*Let’s connect and collaborate on building secure, intelligent systems for the future of distributed technology.*
-
+*Passionate about secure, privacy-preserving, and trustworthy AI systems in distributed environments.*

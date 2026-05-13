@@ -1,4 +1,243 @@
 ---
-layout: home
-# Index page
+layout: page
+title:
+# Landing page
 ---
+
+<style>
+  .landing { margin-top: -1.5rem; }
+  .landing .hero {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.75rem;
+    align-items: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid var(--main-border-color, rgba(128,128,128,0.2));
+  }
+  .landing .hero img.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+  }
+  .landing .hero h1 {
+    margin: 0 0 .25rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .landing .hero .role {
+    color: var(--text-muted-color, #888);
+    font-size: 1.05rem;
+    margin-bottom: .35rem;
+  }
+  .landing .hero .affil { font-size: .95rem; margin-bottom: 1rem; }
+  .landing .hero .cta { display: flex; flex-wrap: wrap; gap: .55rem; }
+  .landing .cta a {
+    display: inline-flex; align-items: center; gap: .4rem;
+    padding: .45rem .85rem;
+    border-radius: 999px;
+    border: 1px solid var(--btn-border-color, rgba(128,128,128,0.35));
+    font-size: .9rem;
+    text-decoration: none;
+    transition: transform .12s ease, background-color .12s ease;
+  }
+  .landing .cta a:hover { transform: translateY(-1px); background: rgba(128,128,128,0.08); }
+  .landing .cta a.primary {
+    background: var(--link-color, #2a408e);
+    border-color: transparent;
+    color: #fff;
+  }
+  .landing .cta a.primary:hover { opacity: .92; }
+
+  .landing section { padding: 1.5rem 0; }
+  .landing section + section { border-top: 1px solid var(--main-border-color, rgba(128,128,128,0.15)); }
+  .landing section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    letter-spacing: .01em;
+  }
+  .landing section h2 .accent { color: var(--link-color, #2a408e); }
+
+  .landing .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .landing .card {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--card-border-color, rgba(128,128,128,0.18));
+    border-radius: 10px;
+    background: var(--card-bg, transparent);
+  }
+  .landing .card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 .35rem;
+  }
+  .landing .card p { margin: 0; font-size: .92rem; color: var(--text-muted-color, #888); }
+
+  .landing .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .landing .tags span {
+    font-size: .8rem;
+    padding: .25rem .6rem;
+    border-radius: 6px;
+    background: rgba(128,128,128,0.12);
+  }
+
+  .landing .timeline { display: flex; flex-direction: column; gap: .9rem; }
+  .landing .timeline .item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    font-size: .94rem;
+  }
+  .landing .timeline .when {
+    color: var(--text-muted-color, #888);
+    font-variant-numeric: tabular-nums;
+    font-size: .88rem;
+    padding-top: .15rem;
+  }
+  .landing .timeline .what strong { display: block; }
+  .landing .timeline .what em { color: var(--text-muted-color, #888); font-style: normal; }
+
+  @media (max-width: 720px) {
+    .landing .hero { grid-template-columns: 1fr; text-align: center; }
+    .landing .hero img.avatar { margin: 0 auto; width: 140px; height: 140px; }
+    .landing .hero .cta { justify-content: center; }
+    .landing .grid-2 { grid-template-columns: 1fr; }
+    .landing .timeline .item { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="landing">
+
+  <header class="hero">
+    <img class="avatar" src="{{ '/assets/img.webp' | relative_url }}" alt="Abdenour Soubih">
+    <div>
+      <h1>Abdenour Soubih</h1>
+      <div class="role">Machine Learning Security Researcher &middot; Federated Learning &middot; Privacy-Preserving AI</div>
+      <div class="affil">M.S. student, Computer Science &amp; Engineering — Sungkyunkwan University (SKKU), South Korea</div>
+      <div class="cta">
+        <a class="primary" href="{{ '/about/' | relative_url }}"><i class="fas fa-user"></i> About me</a>
+        <a href="{{ '/posts/' | relative_url }}"><i class="fas fa-pen-nib"></i> Writing</a>
+        <a href="https://github.com/soubihabdenour" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/abdenour-soubih-5ba56a15a/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:abdenour@g.skku.edu"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="accent">/</span> About</h2>
+    <p>
+      I research <strong>security and privacy of machine learning</strong>, with a focus on
+      <strong>federated learning under realistic constraints</strong> — heterogeneous clients,
+      poisoning and inference threats, and the trade-offs between accuracy, privacy, and robustness.
+      I like to work where <em>theory, systems, and experimentation</em> meet, and I keep an
+      engineering background in IoT and distributed platforms from earlier international collaborations.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="accent">/</span> Research interests</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Federated Learning Robustness</h3>
+        <p>Behavior under non-IID clients, lightweight architectures, and adversarial participants.</p>
+      </div>
+      <div class="card">
+        <h3>Privacy Leakage</h3>
+        <p>Membership inference under temporal and system-level settings — realistic threat models.</p>
+      </div>
+      <div class="card">
+        <h3>Poisoning &amp; Backdoors</h3>
+        <p>Data and model poisoning, evaluation of defenses beyond worst-case assumptions.</p>
+      </div>
+      <div class="card">
+        <h3>Privacy-Preserving ML</h3>
+        <p>Differential privacy, secure aggregation, and auditing protocols for FL pipelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="accent">/</span> Education</h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="when">2024 — present</div>
+        <div class="what">
+          <strong>M.S., Computer Science &amp; Engineering</strong>
+          <em>Sungkyunkwan University (SKKU), Suwon — STEM Scholarship, ML Security track</em>
+        </div>
+      </div>
+      <div class="item">
+        <div class="when">2018 — 2020</div>
+        <div class="what">
+          <strong>M.S., Computer Science</strong>
+          <em>University of Oran 1 Ahmed Ben Bella — FIWARE-based IoT platform thesis</em>
+        </div>
+      </div>
+      <div class="item">
+        <div class="when">2015 — 2018</div>
+        <div class="what">
+          <strong>B.S., Computer Systems</strong>
+          <em>UHBC University, Chlef — e-commerce &amp; online auction platform</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="accent">/</span> Toolbox</h2>
+    <div class="tags">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>Federated Learning</span>
+      <span>Differential Privacy</span>
+      <span>C</span>
+      <span>Linux</span>
+      <span>Docker</span>
+      <span>FIWARE</span>
+      <span>AWS IoT</span>
+      <span>MQTT</span>
+      <span>LoRaWAN</span>
+      <span>NGSI-LD</span>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="accent">/</span> Latest writing</h2>
+    {% assign recent = site.posts | slice: 0, 4 %}
+    {% if recent.size > 0 %}
+      <div class="grid-2">
+        {% for post in recent %}
+          <a class="card" href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: block;">
+            <h3>{{ post.title }}</h3>
+            <p>
+              <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+              {% if post.categories.size > 0 %} &middot; {{ post.categories | join: ", " }}{% endif %}
+            </p>
+          </a>
+        {% endfor %}
+      </div>
+      <p style="margin-top: 1rem;">
+        <a href="{{ '/posts/' | relative_url }}">See all posts &rarr;</a>
+      </p>
+    {% else %}
+      <p>No posts yet — check back soon.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2><span class="accent">/</span> Get in touch</h2>
+    <p>
+      Open to research collaborations, PhD opportunities, and ML/AI engineering roles
+      in trustworthy and privacy-aware AI. Reach me at
+      <a href="mailto:abdenour@g.skku.edu">abdenour@g.skku.edu</a>.
+    </p>
+  </section>
+
+</div>

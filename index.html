@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: Home
 # Landing page
 ---
 
@@ -210,10 +210,9 @@ title:
 
   <section>
     <h2><span class="accent">/</span> Latest writing</h2>
-    {% assign recent = site.posts | slice: 0, 4 %}
-    {% if recent.size > 0 %}
+    {% if site.posts.size > 0 %}
       <div class="grid-2">
-        {% for post in recent %}
+        {% for post in site.posts limit:4 %}
           <a class="card" href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: block;">
             <h3>{{ post.title }}</h3>
             <p>
